@@ -1,0 +1,39 @@
+<mat-toolbar class="toolbar">
+  <!-- Could not change color of the toolbar to be white today. but can be set to predefined colors like primary and warn-->
+  <div class="brand">
+    <!-- will figure out a way to bring both logo above the subtitle like before-->
+    <a routerLink="/" routerLinkActive="active" href="/"> <img src="../assets/image/logo.jpg"></a>
+  </div>
+  <div>
+    <a routerLink="/calender" href="#">Calender </a>
+  </div>
+
+  <div class="rolelbl">
+    <div *ngIf="tb._checked; then t else e"></div>
+    <ng-template #t i18n>Admin</ng-template>
+    <ng-template #e i18n>User</ng-template>
+  </div>
+  <mat-slide-toggle [formControl]="role" #tb class="toggleButton" (change)="onChange()">
+
+  </mat-slide-toggle>
+
+  <div>
+    <mat-form-field class="example-form-field">
+      <input matInput type="text" placeholder="Search">
+      <button mat-button matSuffix mat-icon-button aria-label="Clear">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <div>
+
+    <a href="#" class="loginBtn" routerLink="/login" i18n="@@login">Login</a>
+    <a class="languageBtn" [matMenuTriggerFor]="menu" i18n="@@changelanguage">Change language</a>
+  </div>
+
+  <mat-menu #menu="matMenu">
+    <a class="my-menu-item" href="/cn/" mat-menu-item i18n="@@languageChinese">Chinese</a>
+    <a class="my-menu-item" href="/de/" mat-menu-item i18n="@@languageGerman">German</a>
+    <a class="my-menu-item" href="/en/" mat-menu-item i18n="@@languageEnglish">English</a>
+  </mat-menu>
+</mat-toolbar>

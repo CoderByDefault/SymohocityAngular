@@ -1,0 +1,122 @@
+<div [ngClass]="'sidenav'">
+  <button mat-stroked-button class="closeSidebar" (click)="drawer.toggle()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <div class="panel">
+    <mat-accordion>
+      <mat-expansion-panel class="addPanel">
+        <mat-expansion-panel-header class="btnadd">
+          <mat-panel-title class="addTitle">
+            Add New Location
+          </mat-panel-title>
+          <button class="btn btn-link ml-2 check forHover" mat-stroked-button>
+            <mat-icon class="menuIcon btnedit">add</mat-icon>
+          </button>
+        </mat-expansion-panel-header>
+        <div [ngClass]="'Addobjectform'">
+          <form [formGroup]="locationForm" class="addlocationform" (ngSubmit)="onSubmit()" #formDir="ngForm">
+            <mat-form-field class="addlocationform-full-width">
+              <input matInput placeholder="Name" formControlName="name"  name="name" id="name" required>
+              <mat-error *ngIf="locationForm.invalid">{{getErrorMessageName()}}</mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="addlocationform-full-width">
+              <input matInput placeholder="IP Address" formControlName="ipaddress" name="ipaddress" id="ipaddress" required>
+              <mat-error *ngIf="locationForm.invalid">{{getErrorMessageIpaddress()}}</mat-error> 
+            </mat-form-field>
+            <br>
+            <mat-form-field class="addlocationform-full-width">
+              <input matInput placeholder="Server Login" formControlName="serverlogin" name="serverlogin" id="serverlogin" required>
+              <mat-error *ngIf="locationForm.invalid">{{getErrorMessageServerlogin()}}</mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="addlocationform-full-width">
+              <input matInput placeholder="Server Password" formControlName="password" name="password" type="password" id="password" required>
+              <mat-error *ngIf="locationForm.invalid">{{getErrorMessageServerpassword()}}</mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="addlocationform-full-width">
+              <input matInput placeholder="Sympholight Address" formControlName="address" name="address" id="address" required>
+              <mat-error *ngIf="locationForm.invalid">{{getErrorMessageSympAddress()}}</mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="addlocationform-full-width">
+              <input matInput placeholder="Longitude" formControlName="longitude" type="number" name="longitude" id="longitude" required>
+              <mat-error *ngIf="locationForm.invalid">{{getErrorMessageLongitude()}}</mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="addlocationform-full-width">
+              <input matInput placeholder="Latitude" formControlName="latitude"type="number" name="latitude" id="latitude" required>
+              <mat-error *ngIf="locationForm.invalid">{{getErrorMessageLatitude()}}</mat-error>
+            </mat-form-field>
+            <br>
+            <h5>Location Type</h5>
+            <div class="container">
+              <div class="flex1">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button class="radiobtn" value="Building">Building</mat-radio-button>
+                <mat-radio-button class="radiobtn" value="Fountain">Fountain</mat-radio-button>
+                <mat-radio-button class="radiobtn" value="Theme Part">Theme Part</mat-radio-button>
+                <mat-radio-button class="radiobtn" value="Historical">Historical</mat-radio-button>
+                <mat-radio-button class="radiobtn" value="Stadium">Stadium</mat-radio-button>
+                <mat-radio-button class="radiobtn" value="Statue">Statue</mat-radio-button>
+              </mat-radio-group>
+            </div>
+            </div>
+            <button mat-raised-button class="buttoncolor" type="submit" [disabled]="locationForm.invalid">Add</button>
+            <button mat-raised-button class="btnalign">Cancel</button>
+          </form>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <br>
+  <h3 class="locTitle">Locations</h3>
+  <ul class="mainlist">
+    <li *ngFor="let location of locations; let i=index" [ngClass]="'listitem'">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{location.name}}
+            </mat-panel-title>
+           
+
+
+          </mat-expansion-panel-header>
+          <mat-tab-group>
+              <mat-tab label="Controllers">
+                  <div *ngFor="let controller of controllers">
+                      <div class="controllerItems">
+                          <img
+                          [src]="controller.type == 'Butler PRO'? '../../assets/image/Butler-PRO.png':'../../assets/image/LCE_2.png'"
+                          width="200" alt=""> <br>
+                        <strong>Display Name: </strong>{{controller.displayName}} <br>
+                          <strong>Manufacturer: </strong>{{controller.manufacturer}}<br>
+                          <strong>Status: </strong>{{controller.isOnline == true ? 'Online':'Offline'}}<br>
+                        
+                      </div>
+                      <hr><br>
+                  </div>
+              </mat-tab>
+              <mat-tab label="Sequences"> Sequences </mat-tab>
+              <mat-tab label="Energy"> Energy </mat-tab>
+            </mat-tab-group>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [disabled]="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>{{location.status}}</mat-panel-title>
+                <button class="btn btn-link ml-2 marginRight" mat-stroked-button>
+                    <mat-icon class="menuIcon icoedit" (click)="openEditDialog()">edit</mat-icon>
+                  </button>
+                  <button class="btn btn-link ml-2 marginRight btndel" mat-stroked-button (click)="openDeleteDialog(i, id)">
+                    <mat-icon class="menuIcon icodel">delete</mat-icon>
+                  </button>
+            </mat-expansion-panel-header>
+            </mat-expansion-panel>
+      </mat-accordion>
+    </li>
+  </ul>
+  <div style="vertical-align:top;" [ngClass]="'AddIcon'" *ngIf="show_dialog"></div>
+</div>

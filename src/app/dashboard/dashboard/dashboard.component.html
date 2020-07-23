@@ -1,0 +1,13 @@
+<div class="containerDrawer">
+    <button mat-button i18n="@@locations"  *ngIf="!drawer.opened" class="sidebarToggleBtn" (click)="drawer.toggle();sidebar.loadControllers();">
+      Locations
+    </button>
+  <mat-drawer-container [hasBackdrop]="false">
+    <mat-drawer class="sidebarDrawer" #drawer>
+      <app-sidebar #sidebar [drawer]="drawer"></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+      <app-map></app-map>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

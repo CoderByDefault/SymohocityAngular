@@ -1,0 +1,6 @@
+<h2 mat-dialog-title>Delete Locations</h2>
+<mat-dialog-content>Are you sure you want to delete "{{data.name}}" location?</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button class="buttoncolor" [mat-dialog-close]="1" (click)="onCloseConfirm()">Delete</button>
+    <button mat-raised-button (click)="onCloseCancel()">Cancel</button>
+</mat-dialog-actions>

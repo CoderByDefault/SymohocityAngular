@@ -1,0 +1,10 @@
+{
+  "name": "couch",
+  "connector": "couchdb2",
+  "url": "http://127.0.0.1:5984",
+  "database": "symphocity",
+  "username": "admin",
+  "password": "ecue",
+  "modelIndex": "",
+  "idInjection": true
+}

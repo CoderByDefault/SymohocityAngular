@@ -1,0 +1,1896 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>symphocity documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">symphocity documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>NavbarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/dashboard/navbar/navbar.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-navbar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./navbar.component.sass</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./navbar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closeResult">closeResult</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#controllers">controllers</a>
+                            </li>
+                            <li>
+                                <a href="#locationForm">locationForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#locations">locations</a>
+                            </li>
+                            <li>
+                                <a href="#map">map</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modalService">modalService</a>
+                            </li>
+                            <li>
+                                <a href="#model">model</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#sequences">sequences</a>
+                            </li>
+                            <li>
+                                <a href="#show_dialog">show_dialog</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#show_dialog_edit">show_dialog_edit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#show_dialog_icon">show_dialog_icon</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#token">token</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getDismissReason">getDismissReason</a>
+                            </li>
+                            <li>
+                                <a href="#loadControllers">loadControllers</a>
+                            </li>
+                            <li>
+                                <a href="#loadLocations">loadLocations</a>
+                            </li>
+                            <li>
+                                <a href="#loadSequences">loadSequences</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#open">open</a>
+                            </li>
+                            <li>
+                                <a href="#toggleedit">toggleedit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#name">name</a>
+                                </li>
+                                <li>
+                                    <a href="#ipAddress">ipAddress</a>
+                                </li>
+                                <li>
+                                    <a href="#serverLogin">serverLogin</a>
+                                </li>
+                                <li>
+                                    <a href="#serverPassword">serverPassword</a>
+                                </li>
+                                <li>
+                                    <a href="#sympAddress">sympAddress</a>
+                                </li>
+                                <li>
+                                    <a href="#longitude">longitude</a>
+                                </li>
+                                <li>
+                                    <a href="#latitude">latitude</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_locationService: <a href="../injectables/LocationService.html">LocationService</a>, modalService: NgbModal)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_locationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocationService.html" target="_self" >LocationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgbModal</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDismissReason"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getDismissReason
+                        </b>
+                        <a href="#getDismissReason"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDismissReason(reason: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>reason</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadControllers"></a>
+                    <span class="name">
+                        <b>
+                            loadControllers
+                        </b>
+                        <a href="#loadControllers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadControllers(ip: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:56</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ip</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadLocations"></a>
+                    <span class="name">
+                        <b>
+                            loadLocations
+                        </b>
+                        <a href="#loadLocations"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadLocations()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadSequences"></a>
+                    <span class="name">
+                        <b>
+                            loadSequences
+                        </b>
+                        <a href="#loadSequences"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadSequences(ip: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ip</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="open"></a>
+                    <span class="name">
+                        <b>
+                            open
+                        </b>
+                        <a href="#open"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>open(content, i)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>i</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleedit"></a>
+                    <span class="name">
+                        <b>
+                            toggleedit
+                        </b>
+                        <a href="#toggleedit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleedit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="closeResult"></a>
+                        <span class="name">
+                            <b>
+                            closeResult</b>
+                            <a href="#closeResult"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="controllers"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            controllers</b>
+                            <a href="#controllers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Controller.html" target="_self" >Controller[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locationForm"></a>
+                        <span class="name">
+                            <b>
+                            locationForm</b>
+                            <a href="#locationForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locations"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            locations</b>
+                            <a href="#locations"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Location.html" target="_self" >Location[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="map"></a>
+                        <span class="name">
+                            <b>
+                            map</b>
+                            <a href="#map"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new ol.Map({
+    target: &quot;map&quot;,
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM({
+          url: &quot;https://a.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;
+        })
+      })
+    ],
+    view: new ol.View({
+      center: ol.proj.fromLonLat([51.709188, 8.773002]),
+      zoom: 10
+    })
+  })</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            modalService</b>
+                            <a href="#modalService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>NgbModal</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="model"></a>
+                        <span class="name">
+                            <b>
+                            model</b>
+                            <a href="#model"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Location.html" target="_self" >Location</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sequences"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            sequences</b>
+                            <a href="#sequences"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Sequence.html" target="_self" >Sequence[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="show_dialog"></a>
+                        <span class="name">
+                            <b>
+                            show_dialog</b>
+                            <a href="#show_dialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../miscellaneous/variables.html#ol" target="_self" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="show_dialog_edit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            show_dialog_edit</b>
+                            <a href="#show_dialog_edit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../miscellaneous/variables.html#ol" target="_self" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="show_dialog_icon"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            show_dialog_icon</b>
+                            <a href="#show_dialog_icon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../miscellaneous/variables.html#ol" target="_self" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="token"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            token</b>
+                            <a href="#token"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="name"></a>
+                        <span class="name"><b>name</b><a href="#name"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>name()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:108</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ipAddress"></a>
+                        <span class="name"><b>ipAddress</b><a href="#ipAddress"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>ipAddress()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:109</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="serverLogin"></a>
+                        <span class="name"><b>serverLogin</b><a href="#serverLogin"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>serverLogin()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:110</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="serverPassword"></a>
+                        <span class="name"><b>serverPassword</b><a href="#serverPassword"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>serverPassword()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:111</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sympAddress"></a>
+                        <span class="name"><b>sympAddress</b><a href="#sympAddress"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>sympAddress()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:112</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="longitude"></a>
+                        <span class="name"><b>longitude</b><a href="#longitude"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>longitude()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="113" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:113</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="latitude"></a>
+                        <span class="name"><b>latitude</b><a href="#latitude"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>latitude()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/app/dashboard/navbar/navbar.component.ts:114</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Output, EventEmitter, Input, DoCheck } from &#x27;@angular/core&#x27;;
+import { FormGroup, FormControl, Validators, FormBuilder } from &#x27;@angular/forms&#x27;;
+import { Location } from &#x27;../../models/location&#x27;;
+import { Controller } from &#x27;../../models/controller&#x27;;
+import { Sequence } from &#x27;../../models/sequence&#x27;;
+import { LocationService } from &#x27;../services/location.service&#x27;;
+import { NgbModal, ModalDismissReasons } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
+
+
+declare var ol: any;
+
+@Component({
+  selector: &#x27;app-navbar&#x27;,
+  templateUrl: &#x27;./navbar.component.html&#x27;,
+  styleUrls: [&#x27;./navbar.component.sass&#x27;]
+})
+export class NavbarComponent implements OnInit  {
+  public locations: Location[] &#x3D; [];
+  public controllers: Controller[] &#x3D; [];
+  public sequences: Sequence[] &#x3D; [];
+  show_dialog: boolean &#x3D; false;
+  private show_dialog_edit: boolean &#x3D; false;
+  private show_dialog_icon: boolean &#x3D; false;
+  closeResult: string;
+  public token: string;
+  locationForm: FormGroup;
+  model: Location;
+  map &#x3D; new ol.Map({
+    target: &quot;map&quot;,
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM({
+          url: &quot;https://a.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;
+        })
+      })
+    ],
+    view: new ol.View({
+      center: ol.proj.fromLonLat([51.709188, 8.773002]),
+      zoom: 10
+    })
+  });
+  constructor(private _locationService: LocationService, public modalService: NgbModal) { }
+
+  loadLocations() {
+    this._locationService.getLocations()
+      .subscribe((locations: Location[]) &#x3D;&gt; {
+        this.locations &#x3D; locations;
+
+        locations.forEach(element &#x3D;&gt; {
+          this.loadControllers(element.ipAddress);
+          this.loadSequences(element.ipAddress);
+        });
+
+      });
+  }
+  loadControllers(ip:string) {
+    this.token &#x3D; localStorage.getItem(&quot;authToken&quot;);
+    this._locationService.getControllers(this.token,ip)
+      .subscribe((controllers: Controller[]) &#x3D;&gt; {
+        this.controllers &#x3D; controllers;
+        console.log(&#x27;data  &#x27;+ this.controllers);
+      });
+  }
+
+  loadSequences(ip: string) {
+    this.token &#x3D; localStorage.getItem(&quot;authToken&quot;);
+    this._locationService.getSequences(this.token, ip)
+      .subscribe((sequences: Sequence[]) &#x3D;&gt; {
+        this.sequences &#x3D; sequences;
+        console.log(&#x27;data from data service: &#x27;+ this.sequences[0].identifier);
+      });
+  }
+
+
+  ngOnInit(): void {
+    this.loadLocations();
+    
+    this.locationForm &#x3D; new FormGroup({
+      &#x27;name&#x27;: new FormControl(&#x27;&#x27;, [Validators.required]),
+      &#x27;ipAddress&#x27;: new FormControl(&#x27;&#x27;, [Validators.required]),
+      &#x27;serverLogin&#x27;: new FormControl(&#x27;&#x27;, [Validators.required]),
+      &#x27;serverPassword&#x27;: new FormControl(&#x27;&#x27;, [Validators.required]),
+      &#x27;sympAddress&#x27;: new FormControl(&#x27;&#x27;, [Validators.required]),
+      &#x27;longitude&#x27;: new FormControl(&#x27;&#x27;, [Validators.required]),
+      &#x27;latitude&#x27;: new FormControl(&#x27;&#x27;, [Validators.required])
+    })
+  }
+  open(content, i) {
+    console.log(&quot;triggered&quot;, i);
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-basic-title&#x27; }).result.then((i) &#x3D;&gt; {
+      console.log(&quot;check result&quot;, i);
+      this.closeResult &#x3D; &#x60;Closed with: ${i}&#x60;;
+    }, (reason) &#x3D;&gt; {
+      this.closeResult &#x3D; &#x60;Dismissed ${this.getDismissReason(reason)}&#x60;;
+    });
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason &#x3D;&#x3D;&#x3D; ModalDismissReasons.ESC) {
+      return &#x27;by pressing ESC&#x27;;
+    } else if (reason &#x3D;&#x3D;&#x3D; ModalDismissReasons.BACKDROP_CLICK) {
+      return &#x27;by clicking on a backdrop&#x27;;
+    } else {
+      return &#x60;with: ${reason}&#x60;;
+    }
+  }
+
+  get name() { return this.locationForm.get(&#x27;name&#x27;); }
+  get ipAddress() { return this.locationForm.get(&#x27;ipAddress&#x27;); }
+  get serverLogin() { return this.locationForm.get(&#x27;serverLogin&#x27;); }
+  get serverPassword() { return this.locationForm.get(&#x27;serverPassword&#x27;); }
+  get sympAddress() { return this.locationForm.get(&#x27;sympAddress&#x27;); }
+  get longitude() { return this.locationForm.get(&#x27;longitude&#x27;); }
+  get latitude() { return this.locationForm.get(&#x27;latitude&#x27;); }
+  toggleedit() {
+
+    this.show_dialog_edit &#x3D; !this.show_dialog_edit;
+  }
+
+  // method to add the location on form submit
+  onSubmit(): void {
+    this.model &#x3D; this.locationForm.value;
+    console.log(&quot;this is the model to push&quot;, this.model);
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ng-template #content let-modal&gt;
+  &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+    &lt;h4 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-basic-title&quot;&gt;Confirmatoin&lt;/h4&gt;
+    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;modal.dismiss(&#x27;Cross click&#x27;)&quot;&gt;
+      &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+    &lt;form&gt;
+      &lt;div class&#x3D;&quot;form-group&quot;&gt;
+        &lt;label for&#x3D;&quot;dateOfBirth&quot;&gt;Are you sure you want to delete?&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark&quot; (click)&#x3D;&quot;modal.close(&#x27;Save&#x27;)&quot;&gt;Delete&lt;/button&gt;
+    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark&quot; (click)&#x3D;&quot;modal.close(&#x27;Save click&#x27;)&quot;&gt;Cancel&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/ng-template&gt;
+&lt;div [ngClass]&#x3D;&quot;&#x27;sidenav&#x27;&quot;&gt;
+  &lt;table style&#x3D;&quot;width:100%;&quot;&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;ul [ngClass]&#x3D;&quot;&#x27;mainlist&#x27;&quot;&gt;
+          &lt;li style&#x3D;&quot;display:none;&quot;&gt;
+            &lt;h3 style&#x3D;&quot;margin-left:10px;&quot;&gt;Locations &lt;button type&#x3D;&quot;button&quot; style&#x3D;&quot;float:right;&quot;
+                class&#x3D;&quot;btn btn-success btn-sm&quot;&gt;
+                &lt;i class&#x3D;&quot;fas fa-plus&quot; (click)&#x3D;&quot;acc.toggle(&#x27;toggle-1&#x27;)&quot;&gt;&lt;/i&gt;
+              &lt;/button&gt;&lt;/h3&gt;
+
+          &lt;/li&gt;
+          &lt;ngb-accordion #acc&#x3D;&quot;ngbAccordion&quot; activeIds&#x3D;&quot;ngb-panel-0&quot;&gt;
+            &lt;ngb-panel id&#x3D;&quot;toggle-1&quot; title&#x3D;&quot;Add New&quot;&gt;
+              &lt;ng-template ngbPanelContent&gt;
+                &lt;div [ngClass]&#x3D;&quot;&#x27;Addobjectform&#x27;&quot;&gt;
+                  &lt;p [ngClass]&#x3D;&quot;&#x27;message&#x27;&quot;&gt;Added successfully&lt;/p&gt;
+                  &lt;form [formGroup]&#x3D;&quot;locationForm&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot; #formDir&#x3D;&quot;ngForm&quot;&gt;
+                    &lt;div [hidden]&#x3D;&quot;formDir.submitted&quot; style&#x3D;&quot;margin:10px;&quot;&gt;
+                      &lt;div class&#x3D;&quot;cross-validation&quot;
+                        [class.cross-validation-error]&#x3D;&quot;locationForm.errors?.identityRevealed &amp;&amp; (locationForm.touched || locationForm.dirty)&quot;&gt;
+
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                          &lt;label for&#x3D;&quot;name&quot;&gt;Name: &lt;span [ngClass]&#x3D;&quot;&#x27;required&#x27;&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+                          &lt;input id&#x3D;&quot;name&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control inputLabel&quot; formControlName&#x3D;&quot;name&quot; required&gt;
+                          &lt;div *ngIf&#x3D;&quot; name.invalid &amp;&amp; (name.dirty || name.touched)&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;name.errors.required&quot;&gt;
+                              Name is required.
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                          &lt;label for&#x3D;&quot;ipAddress&quot;&gt;IP Address: &lt;span [ngClass]&#x3D;&quot;&#x27;required&#x27;&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+                          &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;ipAddress&quot; class&#x3D;&quot;form-control inputLabel&quot; formControlName&#x3D;&quot;ipAddress&quot;
+                            required&gt;
+                          &lt;div *ngIf&#x3D;&quot; ipAddress.invalid &amp;&amp; (ipAddress.dirty || ipAddress.touched)&quot;
+                            class&#x3D;&quot;alert alert-danger&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;ipAddress.errors.required&quot;&gt;
+                              IP Address is required.
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                          &lt;label for&#x3D;&quot;serverLogin&quot;&gt;Server Login: &lt;span [ngClass]&#x3D;&quot;&#x27;required&#x27;&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+                          &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;serverLogin&quot; class&#x3D;&quot;form-control inputLabel&quot;
+                            formControlName&#x3D;&quot;serverLogin&quot; required&gt;
+                          &lt;div *ngIf&#x3D;&quot; serverLogin.invalid &amp;&amp; (serverLogin.dirty || serverLogin.touched)&quot;
+                            class&#x3D;&quot;alert alert-danger&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;serverLogin.errors.required&quot;&gt;
+                              Server Login is required.
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                          &lt;label for&#x3D;&quot;serverPassword&quot;&gt;Server Password: &lt;span [ngClass]&#x3D;&quot;&#x27;required&#x27;&quot;&gt;*&lt;/span&gt; &lt;/label&gt;
+                          &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;serverPassword&quot; class&#x3D;&quot;form-control inputLabel&quot;
+                            formControlName&#x3D;&quot;serverPassword&quot; required&gt;
+                          &lt;div *ngIf&#x3D;&quot; serverPassword.invalid &amp;&amp; (serverPassword.dirty || serverPassword.touched)&quot;
+                            class&#x3D;&quot;alert alert-danger&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;serverPassword.errors.required&quot;&gt;
+                              Server Password is required.
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                          &lt;label for&#x3D;&quot;sympAddress&quot;&gt;Sympholight Address: &lt;span [ngClass]&#x3D;&quot;&#x27;required&#x27;&quot;&gt;*&lt;/span&gt; &lt;/label&gt;
+                          &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;sympAddress&quot; class&#x3D;&quot;form-control inputLabel&quot;
+                            formControlName&#x3D;&quot;sympAddress&quot; required&gt;
+                          &lt;div *ngIf&#x3D;&quot; sympAddress.invalid &amp;&amp; (sympAddress.dirty || sympAddress.touched)&quot;
+                            class&#x3D;&quot;alert alert-danger&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;serverPassword.errors.required&quot;&gt;
+                              Symphocity address is required.
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                          &lt;label for&#x3D;&quot;longitude&quot;&gt;Longitude: &lt;span [ngClass]&#x3D;&quot;&#x27;required&#x27;&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+                          &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;longitude&quot; class&#x3D;&quot;form-control inputLabel&quot; formControlName&#x3D;&quot;longitude&quot;
+                            required&gt;
+                          &lt;div *ngIf&#x3D;&quot; longitude.invalid &amp;&amp; (longitude.dirty || longitude.touched)&quot;
+                            class&#x3D;&quot;alert alert-danger&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;longitude.errors.required&quot;&gt;
+                              Longitude is required.
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                          &lt;label for&#x3D;&quot;latitude&quot;&gt;Latitude: &lt;span [ngClass]&#x3D;&quot;&#x27;required&#x27;&quot;&gt;*&lt;/span&gt; &lt;/label&gt;
+                          &lt;input id&#x3D;&quot;latitude&quot; class&#x3D;&quot;form-control inputLabel&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;latitude&quot;
+                            required&gt;
+                          &lt;div *ngIf&#x3D;&quot; latitude.invalid &amp;&amp; (latitude.dirty || latitude.touched)&quot;
+                            class&#x3D;&quot;alert alert-danger&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;latitude.errors.required&quot;&gt;
+                              Latitude is required.
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                          &lt;label for&#x3D;&quot;serverLogin&quot;&gt;Location Type: &lt;span [ngClass]&#x3D;&quot;&#x27;required&#x27;&quot;&gt;*&lt;/span&gt;&lt;/label&gt;&lt;br&gt;
+                          &lt;input type&#x3D;&quot;checkbox&quot; style&#x3D;&quot;display: none;&quot; id&#x3D;&quot;building&quot; /&gt;
+                          &lt;label for&#x3D;&quot;building&quot;&gt;&lt;img alt&#x3D;&quot;building&quot; src&#x3D;&quot;../assets/image/building_offline.png&quot; height&#x3D;&quot;50&quot;
+                              width&#x3D;&quot;50&quot;&gt;
+                            &lt;figcaption align&#x3D;&quot;center&quot;&gt;Building&lt;/figcaption&gt;
+                          &lt;/label&gt;
+                          &lt;input type&#x3D;&quot;checkbox&quot; style&#x3D;&quot;display: none;&quot; id&#x3D;&quot;fountain&quot; /&gt;
+                          &lt;label for&#x3D;&quot;fountain&quot;&gt;&lt;img alt&#x3D;&quot;fountain&quot; src&#x3D;&quot;../assets/image/fountain_offline.png&quot; height&#x3D;&quot;100&quot;
+                              width&#x3D;&quot;100&quot;&gt;
+                            &lt;figcaption align&#x3D;&quot;center&quot;&gt;Fountain&lt;/figcaption&gt;
+                          &lt;/label&gt;
+                          &lt;input type&#x3D;&quot;checkbox&quot; style&#x3D;&quot;display: none;&quot; id&#x3D;&quot;themepark&quot; /&gt;
+                          &lt;label for&#x3D;&quot;themepark&quot;&gt;&lt;img alt&#x3D;&quot;themepark&quot; src&#x3D;&quot;../assets/image/themepark_offline.png&quot; height&#x3D;&quot;100&quot;
+                              width&#x3D;&quot;100&quot;&gt;
+                            &lt;figcaption align&#x3D;&quot;center&quot;&gt;Themepark&lt;/figcaption&gt;
+                          &lt;/label&gt;
+                          &lt;input type&#x3D;&quot;checkbox&quot; style&#x3D;&quot;display: none;&quot; id&#x3D;&quot;historical&quot; /&gt;
+                          &lt;label for&#x3D;&quot;historical&quot;&gt;&lt;img alt&#x3D;&quot;historical&quot; src&#x3D;&quot;../assets/image/historical_offline.png&quot;
+                              height&#x3D;&quot;100&quot; width&#x3D;&quot;100&quot;&gt;
+                            &lt;figcaption align&#x3D;&quot;center&quot;&gt;Historical&lt;/figcaption&gt;
+                          &lt;/label&gt;
+                          &lt;input type&#x3D;&quot;checkbox&quot; style&#x3D;&quot;display: none;&quot; id&#x3D;&quot;stadium&quot; /&gt;
+                          &lt;label for&#x3D;&quot;stadium&quot;&gt;&lt;img alt&#x3D;&quot;stadium&quot; src&#x3D;&quot;../assets/image/stadium_offline.png&quot; height&#x3D;&quot;100&quot;
+                              width&#x3D;&quot;100&quot;&gt;
+                            &lt;figcaption align&#x3D;&quot;center&quot;&gt;Stadium&lt;/figcaption&gt;
+                          &lt;/label&gt;
+                          &lt;input type&#x3D;&quot;checkbox&quot; style&#x3D;&quot;display: none;&quot; id&#x3D;&quot;statue&quot; /&gt;
+                          &lt;label for&#x3D;&quot;statue&quot;&gt;&lt;img alt&#x3D;&quot;statue&quot; src&#x3D;&quot;../assets/image/statue_offline.png&quot; height&#x3D;&quot;100&quot;
+                              width&#x3D;&quot;100&quot;&gt;
+                            &lt;figcaption align&#x3D;&quot;center&quot;&gt;Statue&lt;/figcaption&gt;
+                          &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success btn-sm&quot; style&#x3D;&quot;font-size:1.0em;&quot;
+                          [disabled]&#x3D;&quot;!locationForm.valid&quot;&gt;Create Object Controller&lt;/button&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/form&gt;
+                &lt;/div&gt;
+              &lt;/ng-template&gt;
+            &lt;/ngb-panel&gt;
+          &lt;/ngb-accordion&gt;
+          &lt;br&gt;
+          &lt;h3 style&#x3D;&quot;margin-left:10px;&quot;&gt;Locations&lt;/h3&gt;
+          &lt;li *ngFor&#x3D;&quot;let location of locations; let i&#x3D;index&quot; [ngClass]&#x3D;&quot;&#x27;listitem&#x27;&quot;&gt;
+            &lt;ngb-accordion #acc&#x3D;&quot;ngbAccordion&quot;&gt;
+              &lt;ngb-panel title&#x3D;{{location.name}} id&#x3D;&quot;custom-panel-1&quot;&gt;
+                &lt;ng-template ngbPanelHeader&gt;
+                  &lt;div class&#x3D;&quot;d-flex align-items-center justify-content-between&quot;&gt;
+                    &lt;h5 class&#x3D;&quot;m-0&quot;&gt;{{location.name}} &lt;/h5&gt;
+                    &lt;div&gt;
+                      &lt;button ngbPanelToggle class&#x3D;&quot;btn btn-link ml-2 check &quot;&gt; &lt;a class&#x3D;&quot;btn btn-outline-primary btn-xs&quot;
+                          (click)&#x3D;&quot;toggleedit()&quot;&gt;
+                          &lt;i class&#x3D;&quot;fas fa-edit fa-xs&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;&lt;/button&gt;
+                      &lt;button class&#x3D;&quot;btn btn-link ml-2 check forHover&quot;&gt; &lt;a class&#x3D;&quot;btn btn-outline-danger btn-xs&quot;
+                          (click)&#x3D;&quot;open(content, i)&quot;&gt;
+                          &lt;i class&#x3D;&quot;fas fa-trash fa-xs &quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;&lt;/button&gt; &lt;button ngbPanelToggle
+                        class&#x3D;&quot;btn btn-sm btn-outline-primary ml-2&quot;&gt;Details&lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/ng-template&gt;
+                &lt;ng-template ngbPanelContent&gt;
+                  &lt;div id&#x3D;&quot;exTab1&quot; class&#x3D;&quot;container&quot;&gt;
+                    &lt;ul class&#x3D;&quot;nav nav-pills&quot;&gt;
+                      &lt;li class&#x3D;&quot;active&quot;&gt;
+                        &lt;a class&#x3D;&quot;btn btn-sm btn-outline-primary&quot; href&#x3D;&quot;#Controllers&quot; data-toggle&#x3D;&quot;tab&quot;&gt;Controllers&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;&lt;a class&#x3D;&quot;btn btn-sm btn-outline-primary&quot; href&#x3D;&quot;#Sequences&quot; data-toggle&#x3D;&quot;tab&quot;&gt;Sequences&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;&lt;a class&#x3D;&quot;btn btn-sm btn-outline-primary&quot; href&#x3D;&quot;#Energy&quot; data-toggle&#x3D;&quot;tab&quot;&gt;Energy&lt;/a&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;div class&#x3D;&quot;tab-content clearfix&quot;&gt;
+                      &lt;div class&#x3D;&quot;tab-pane active&quot; id&#x3D;&quot;Controllers&quot;&gt;
+                        &lt;div align&#x3D;&quot;center&quot; *ngFor&#x3D;&quot;let controller of controllers&quot;&gt;
+                          &lt;img
+                            [src]&#x3D;&quot;controller.type &#x3D;&#x3D; &#x27;Butler PRO&#x27;? &#x27;../../assets/image/Butler-PRO.png&#x27;:&#x27;../../assets/image/LCE_2.png&#x27;&quot;
+                            width&#x3D;&quot;200&quot; alt&#x3D;&quot;&quot;&gt; &lt;br&gt;
+                          &lt;h6&gt;&lt;strong&gt;Display Name: &lt;/strong&gt;{{controller.displayName}} &lt;br&gt;
+                            &lt;strong&gt;Manufacturer: &lt;/strong&gt;{{controller.manufacturer}}&lt;br&gt;
+                            &lt;strong&gt;Status: &lt;/strong&gt;{{controller.isOnline &#x3D;&#x3D; true ? &#x27;Online&#x27;:&#x27;Offline&#x27;}}&lt;br&gt;
+                          &lt;/h6&gt;
+                          &lt;hr&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div align&#x3D;&quot;center&quot; class&#x3D;&quot;tab-pane tab-content clearfix&quot; *ngFor&#x3D;&quot;let sequence of sequences&quot;
+                        id&#x3D;&quot;Sequences&quot;&gt;
+                        &lt;hr&gt;
+                        &lt;strong&gt;Identifier: &lt;/strong&gt;{{sequence.identifier}}&lt;br&gt;
+                        &lt;button class&#x3D;&quot;btn btn-link ml-2 check &quot;&gt; &lt;a class&#x3D;&quot;btn btn-outline-primary btn-xs&quot;&gt;
+                            &lt;i class&#x3D;&quot;fas fa-play fa-xs&quot; title&#x3D;&quot;Play&quot;&gt;&lt;/i&gt;
+                          &lt;/a&gt;&lt;/button&gt;
+                        &lt;button class&#x3D;&quot;btn btn-link ml-2 check&quot;&gt; &lt;a class&#x3D;&quot;btn btn-outline-primary btn-xs&quot;&gt;
+                            &lt;i class&#x3D;&quot;fas fa-pause fa-xs&quot; title&#x3D;&quot;Pause&quot;&gt;&lt;/i&gt;
+                          &lt;/a&gt;&lt;/button&gt;
+                        &lt;button class&#x3D;&quot;btn btn-link ml-2 check&quot;&gt; &lt;a class&#x3D;&quot;btn btn-outline-primary btn-xs&quot;&gt;
+                            &lt;i class&#x3D;&quot;fas fa-stop fa-xs&quot; title&#x3D;&quot;Stop&quot;&gt;&lt;/i&gt;
+                          &lt;/a&gt;&lt;/button&gt;
+                        &lt;button class&#x3D;&quot;btn btn-link ml-2 check&quot;&gt; &lt;a class&#x3D;&quot;btn btn-outline-primary btn-xs&quot;&gt;
+                            &lt;i class&#x3D;&quot;fas fa-forward fa-xs&quot;&gt;&lt;/i&gt;
+                          &lt;/a&gt;&lt;/button&gt;
+                      &lt;/div&gt;
+                      &lt;hr&gt;
+                      &lt;div class&#x3D;&quot;tab-pane&quot; id&#x3D;&quot;Energy&quot;&gt;
+                        &lt;h3&gt;Energy Gauges come here&lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/ng-template&gt;
+              &lt;/ngb-panel&gt;
+            &lt;/ngb-accordion&gt;
+            &lt;span style&#x3D;&quot;font-size:0.7em;&quot;&gt;{{location.status}}&lt;/span&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;
+
+      &lt;td style&#x3D;&quot;vertical-align:top;&quot; [ngClass]&#x3D;&quot;&#x27;AddIcon&#x27;&quot; *ngIf&#x3D;&quot;show_dialog&quot;&gt;
+
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./navbar.component.sass</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.inputLabel
+    display:block
+
+
+.mainlist
+    background-color: #fff
+    list-style: none
+    padding: 30px
+    width: 100%
+
+
+.listitem
+    margin: 5px
+    background-color: #fff
+    border: 1px solid #cacaca
+    border-radius: 3px
+    padding: 10px
+    color: #333
+    width: 100%
+
+.Addobjectform
+    background-color: #fff
+
+
+.AddIcon
+    background-color: #fff
+    
+
+.Addobjectform:checked+label 
+    border-color: #ddd
+    border-color: red
+
+  
+.Addobjectform:checked+label::before 
+   background-color: grey
+   background-color: green
+    transform: scale(1)
+
+  
+.Addobjectform:checked+label img 
+    transform: scale(0.9)
+    box-shadow: 0 0 10px #f60
+    z-index: -1
+
+.Addobjectform, label, img 
+    height: 70px
+    width: 70px
+    transition-duration: 0.2s
+    transform-origin: 50% 50%
+
+.Addobjectform, label, img:hover 
+    cursor: pointer
+
+.Addobjectform, label, figcaption 
+    font-size: 0.6em
+
+
+.cross-validation-error, input 
+    border-left: 5px solid red
+  
+
+.required
+    color: red
+
+
+  
+.ng-sidebar--animate  
+    max-width: 20% !important
+  
+.ng-sidebar--left[_ngcontent-ejd-c3] 
+    max-width: 20% !important
+
+
+.check:hover 
+    color: white !important
+
+
+.forHover
+    color: red
+
+
+.forHover:hover
+    color: white
+
+
+  
+#exTab1, .tab-content
+    padding: 5px 15px
+  
+  
+#exTab1, .nav-pills 
+    li
+        a 
+            text-align: center
+  
+#exTab1, .nav-pills
+    li 
+        text-align: center
+        width: 33.3%
+  
+  
+  
+  
+  
+  
+  
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ng-template #content let-modal>  <div class="modal-header">    <h4 class="modal-title" id="modal-basic-title">Confirmatoin</h4>    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss(\'Cross click\')">      <span aria-hidden="true">&times;</span>    </button>  </div>  <div class="modal-body">    <form>      <div class="form-group">        <label for="dateOfBirth">Are you sure you want to delete?</label>      </div>    </form>  </div>  <div class="modal-footer">    <button type="button" class="btn btn-outline-dark" (click)="modal.close(\'Save\')">Delete</button>    <button type="button" class="btn btn-outline-dark" (click)="modal.close(\'Save click\')">Cancel</button>  </div></ng-template><div [ngClass]="\'sidenav\'">  <table style="width:100%;">    <tr>      <td>        <ul [ngClass]="\'mainlist\'">          <li style="display:none;">            <h3 style="margin-left:10px;">Locations <button type="button" style="float:right;"                class="btn btn-success btn-sm">                <i class="fas fa-plus" (click)="acc.toggle(\'toggle-1\')"></i>              </button></h3>          </li>          <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">            <ngb-panel id="toggle-1" title="Add New">              <ng-template ngbPanelContent>                <div [ngClass]="\'Addobjectform\'">                  <p [ngClass]="\'message\'">Added successfully</p>                  <form [formGroup]="locationForm" (ngSubmit)="onSubmit()" #formDir="ngForm">                    <div [hidden]="formDir.submitted" style="margin:10px;">                      <div class="cross-validation"                        [class.cross-validation-error]="locationForm.errors?.identityRevealed && (locationForm.touched || locationForm.dirty)">                        <div class="form-group">                          <label for="name">Name: <span [ngClass]="\'required\'">*</span></label>                          <input id="name" type="text" class="form-control inputLabel" formControlName="name" required>                          <div *ngIf=" name.invalid && (name.dirty || name.touched)" class="alert alert-danger">                            <div *ngIf="name.errors.required">                              Name is required.                            </div>                          </div>                        </div>                        <div class="form-group">                          <label for="ipAddress">IP Address: <span [ngClass]="\'required\'">*</span></label>                          <input type="text" id="ipAddress" class="form-control inputLabel" formControlName="ipAddress"                            required>                          <div *ngIf=" ipAddress.invalid && (ipAddress.dirty || ipAddress.touched)"                            class="alert alert-danger">                            <div *ngIf="ipAddress.errors.required">                              IP Address is required.                            </div>                          </div>                        </div>                        <div class="form-group">                          <label for="serverLogin">Server Login: <span [ngClass]="\'required\'">*</span></label>                          <input type="text" id="serverLogin" class="form-control inputLabel"                            formControlName="serverLogin" required>                          <div *ngIf=" serverLogin.invalid && (serverLogin.dirty || serverLogin.touched)"                            class="alert alert-danger">                            <div *ngIf="serverLogin.errors.required">                              Server Login is required.                            </div>                          </div>                        </div>                        <div class="form-group">                          <label for="serverPassword">Server Password: <span [ngClass]="\'required\'">*</span> </label>                          <input type="text" id="serverPassword" class="form-control inputLabel"                            formControlName="serverPassword" required>                          <div *ngIf=" serverPassword.invalid && (serverPassword.dirty || serverPassword.touched)"                            class="alert alert-danger">                            <div *ngIf="serverPassword.errors.required">                              Server Password is required.                            </div>                          </div>                        </div>                        <div class="form-group">                          <label for="sympAddress">Sympholight Address: <span [ngClass]="\'required\'">*</span> </label>                          <input type="text" id="sympAddress" class="form-control inputLabel"                            formControlName="sympAddress" required>                          <div *ngIf=" sympAddress.invalid && (sympAddress.dirty || sympAddress.touched)"                            class="alert alert-danger">                            <div *ngIf="serverPassword.errors.required">                              Symphocity address is required.                            </div>                          </div>                        </div>                        <div class="form-group">                          <label for="longitude">Longitude: <span [ngClass]="\'required\'">*</span></label>                          <input type="text" id="longitude" class="form-control inputLabel" formControlName="longitude"                            required>                          <div *ngIf=" longitude.invalid && (longitude.dirty || longitude.touched)"                            class="alert alert-danger">                            <div *ngIf="longitude.errors.required">                              Longitude is required.                            </div>                          </div>                        </div>                        <div class="form-group">                          <label for="latitude">Latitude: <span [ngClass]="\'required\'">*</span> </label>                          <input id="latitude" class="form-control inputLabel" type="text" formControlName="latitude"                            required>                          <div *ngIf=" latitude.invalid && (latitude.dirty || latitude.touched)"                            class="alert alert-danger">                            <div *ngIf="latitude.errors.required">                              Latitude is required.                            </div>                          </div>                        </div>                        <div>                          <label for="serverLogin">Location Type: <span [ngClass]="\'required\'">*</span></label><br>                          <input type="checkbox" style="display: none;" id="building" />                          <label for="building"><img alt="building" src="../assets/image/building_offline.png" height="50"                              width="50">                            <figcaption align="center">Building</figcaption>                          </label>                          <input type="checkbox" style="display: none;" id="fountain" />                          <label for="fountain"><img alt="fountain" src="../assets/image/fountain_offline.png" height="100"                              width="100">                            <figcaption align="center">Fountain</figcaption>                          </label>                          <input type="checkbox" style="display: none;" id="themepark" />                          <label for="themepark"><img alt="themepark" src="../assets/image/themepark_offline.png" height="100"                              width="100">                            <figcaption align="center">Themepark</figcaption>                          </label>                          <input type="checkbox" style="display: none;" id="historical" />                          <label for="historical"><img alt="historical" src="../assets/image/historical_offline.png"                              height="100" width="100">                            <figcaption align="center">Historical</figcaption>                          </label>                          <input type="checkbox" style="display: none;" id="stadium" />                          <label for="stadium"><img alt="stadium" src="../assets/image/stadium_offline.png" height="100"                              width="100">                            <figcaption align="center">Stadium</figcaption>                          </label>                          <input type="checkbox" style="display: none;" id="statue" />                          <label for="statue"><img alt="statue" src="../assets/image/statue_offline.png" height="100"                              width="100">                            <figcaption align="center">Statue</figcaption>                          </label>                        </div>                        <button type="submit" class="btn btn-success btn-sm" style="font-size:1.0em;"                          [disabled]="!locationForm.valid">Create Object Controller</button>                      </div>                    </div>                  </form>                </div>              </ng-template>            </ngb-panel>          </ngb-accordion>          <br>          <h3 style="margin-left:10px;">Locations</h3>          <li *ngFor="let location of locations; let i=index" [ngClass]="\'listitem\'">            <ngb-accordion #acc="ngbAccordion">              <ngb-panel title={{location.name}} id="custom-panel-1">                <ng-template ngbPanelHeader>                  <div class="d-flex align-items-center justify-content-between">                    <h5 class="m-0">{{location.name}} </h5>                    <div>                      <button ngbPanelToggle class="btn btn-link ml-2 check "> <a class="btn btn-outline-primary btn-xs"                          (click)="toggleedit()">                          <i class="fas fa-edit fa-xs"></i>                        </a></button>                      <button class="btn btn-link ml-2 check forHover"> <a class="btn btn-outline-danger btn-xs"                          (click)="open(content, i)">                          <i class="fas fa-trash fa-xs "></i>                        </a></button> <button ngbPanelToggle                        class="btn btn-sm btn-outline-primary ml-2">Details</button>                    </div>                  </div>                </ng-template>                <ng-template ngbPanelContent>                  <div id="exTab1" class="container">                    <ul class="nav nav-pills">                      <li class="active">                        <a class="btn btn-sm btn-outline-primary" href="#Controllers" data-toggle="tab">Controllers</a>                      </li>                      <li><a class="btn btn-sm btn-outline-primary" href="#Sequences" data-toggle="tab">Sequences</a>                      </li>                      <li><a class="btn btn-sm btn-outline-primary" href="#Energy" data-toggle="tab">Energy</a>                      </li>                    </ul>                    <div class="tab-content clearfix">                      <div class="tab-pane active" id="Controllers">                        <div align="center" *ngFor="let controller of controllers">                          <img                            [src]="controller.type == \'Butler PRO\'? \'../../assets/image/Butler-PRO.png\':\'../../assets/image/LCE_2.png\'"                            width="200" alt=""> <br>                          <h6><strong>Display Name: </strong>{{controller.displayName}} <br>                            <strong>Manufacturer: </strong>{{controller.manufacturer}}<br>                            <strong>Status: </strong>{{controller.isOnline == true ? \'Online\':\'Offline\'}}<br>                          </h6>                          <hr>                        </div>                      </div>                      <div align="center" class="tab-pane tab-content clearfix" *ngFor="let sequence of sequences"                        id="Sequences">                        <hr>                        <strong>Identifier: </strong>{{sequence.identifier}}<br>                        <button class="btn btn-link ml-2 check "> <a class="btn btn-outline-primary btn-xs">                            <i class="fas fa-play fa-xs" title="Play"></i>                          </a></button>                        <button class="btn btn-link ml-2 check"> <a class="btn btn-outline-primary btn-xs">                            <i class="fas fa-pause fa-xs" title="Pause"></i>                          </a></button>                        <button class="btn btn-link ml-2 check"> <a class="btn btn-outline-primary btn-xs">                            <i class="fas fa-stop fa-xs" title="Stop"></i>                          </a></button>                        <button class="btn btn-link ml-2 check"> <a class="btn btn-outline-primary btn-xs">                            <i class="fas fa-forward fa-xs"></i>                          </a></button>                      </div>                      <hr>                      <div class="tab-pane" id="Energy">                        <h3>Energy Gauges come here</h3>                      </div>                    </div>                  </div>                </ng-template>              </ngb-panel>            </ngb-accordion>            <span style="font-size:0.7em;">{{location.status}}</span>          </li>        </ul>      </td>      <td style="vertical-align:top;" [ngClass]="\'AddIcon\'" *ngIf="show_dialog">      </td>    </tr>  </table></div></div>'
+    var COMPONENTS = [{'name': 'AddlocationComponent', 'selector': 'app-addlocation'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardMainComponent', 'selector': 'app-dashboard-main'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NgbdModalBasic', 'selector': 'ngbd-modal-basic'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'NavbarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NavbarComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

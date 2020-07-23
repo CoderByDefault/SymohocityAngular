@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="flex1">
+  </div>
+  <div class="flex2">
+    <img src="../assets/image/logo.jpg" alt="Osram">
+  </div>
+  <div class="flex3">
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="loginform">
+      <div>
+        <mat-form-field color="primary">
+          <input matInput #input  placeholder="Username" formControlName="username" name="username"
+            id="username" required>
+          <mat-error *ngIf="loginForm.invalid">{{getErrorMessageName()}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field color="primary">
+          <input matInput #input formControlName="password" placeholder="Password"
+            [type]="hide ? 'password' : 'text'" name="password" required>
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          <mat-error *ngIf="loginForm.invalid">{{getErrorMessagePwd()}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="loginbtn">
+        <button mat-raised-button type="submit" class="login-btn" [disabled]="loginForm.invalid">Login</button>
+      </div>
+    </form>
+  </div>
+</div>

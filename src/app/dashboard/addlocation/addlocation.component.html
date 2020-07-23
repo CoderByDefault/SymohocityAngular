@@ -1,0 +1,50 @@
+<h2 mat-dialog-title>Add Locations</h2>
+<mat-dialog-content>
+    <form [formGroup]="addnewlocForm"  (ngSubmit)="onSubmit()" #formDir="ngForm">
+        <mat-form-field class="matform">
+          <input matInput   placeholder="Name" formControlName="name">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="matform">
+          <input matInput placeholder="IP Address" formControlName="ipAddress">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="matform">
+          <input matInput placeholder="Server Login" formControlName="serverLogin">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="matform">
+          <input matInput placeholder="Server Password" type="password" formControlName="serverPassword">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="matform">
+          <input matInput placeholder="Sympholight Address" formControlName="sympAddress">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="matform">
+          <input matInput [(ngModel)]="data.lng" type="number" placeholder="Longitude" formControlName="longitude">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="matform">
+          <input matInput [(ngModel)]="data.lat" type="number" placeholder="Latitude" formControlName="latitude">
+        </mat-form-field>
+        <br>
+        <h5>Location Type</h5>
+        <div class="container">
+          <div class="flex1">
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button class="radiobtn" value="Building">Building</mat-radio-button>
+            <mat-radio-button class="radiobtn" value="Fountain">Fountain</mat-radio-button>
+            <mat-radio-button class="radiobtn" value="Theme Part">Theme Part</mat-radio-button>
+            <mat-radio-button class="radiobtn" value="Historical">Historical</mat-radio-button>
+            <mat-radio-button class="radiobtn" value="Stadium">Stadium</mat-radio-button>
+            <mat-radio-button class="radiobtn" value="Statue">Statue</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        </div>
+      </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button class="buttoncolor" [mat-dialog-close]="1" (click)="onAddLocConfirm()">Confirm</button>
+    <button mat-raised-button (click)="onAddLocCancel()">Cancel</button>
+</mat-dialog-actions>
