@@ -63,7 +63,7 @@
     "lodash": "^4.17.14",
     "loopback-connector-cassandra": "^1.7.1",
     "loopback-connector-couchdb2": "^1.4.0",
-    "loopback-connector-postgresql": "^3.7.0",
+    "loopback-connector-postgresql": "^5.5.1",
     "primeng": "^7.0.0",
     "primeicons": "^1.0.0"
   },
