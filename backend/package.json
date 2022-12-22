@@ -59,7 +59,7 @@
     "@types/lodash": "^4.14.136",
     "bcryptjs": "^2.4.3",
     "express-rate-limit": "^5.0.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.14",
     "loopback-connector-cassandra": "^1.7.1",
     "loopback-connector-couchdb2": "^1.4.0",
